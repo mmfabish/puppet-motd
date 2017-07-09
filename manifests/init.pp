@@ -1,4 +1,6 @@
-class motd {
+class motd ( 
+    $message = $motd::params::message,  
+) inherits motd::params {
   
   file { '/etc/motd':
     ensure => file,
